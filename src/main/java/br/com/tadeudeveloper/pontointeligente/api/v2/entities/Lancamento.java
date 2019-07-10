@@ -24,7 +24,7 @@ import br.com.tadeudeveloper.pontointeligente.api.v2.enums.TipoEnum;
 @Table(name = "lancamento")
 public class Lancamento implements Serializable {
 
-	private static final long serialVersionUID = 6909202844824233320L;
+	private static final long serialVersionUID = 6960782012929046705L;
 
 	private Long id;
 	private Date data;
@@ -36,7 +36,6 @@ public class Lancamento implements Serializable {
 	private Funcionario funcionario;
 
 	public Lancamento() {
-
 	}
 
 	@Id

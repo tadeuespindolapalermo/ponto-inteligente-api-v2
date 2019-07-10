@@ -20,7 +20,7 @@ import javax.persistence.Table;
 @Table(name = "empresa")
 public class Empresa implements Serializable {
 
-	private static final long serialVersionUID = -2562615572319198472L;
+	private static final long serialVersionUID = 3960436649365666213L;
 
 	private Long id;
 	private String razaoSocial;
@@ -30,7 +30,6 @@ public class Empresa implements Serializable {
 	private List<Funcionario> funcionarios;
 
 	public Empresa() {
-
 	}
 
 	@Id
@@ -105,5 +104,5 @@ public class Empresa implements Serializable {
 		return "Empresa [id=" + id + ", razaoSocial=" + razaoSocial + ", cnpj=" + cnpj + ", dataCriacao=" + dataCriacao
 				+ ", dataAtualizacao=" + dataAtualizacao + "]";
 	}
-
+	
 }

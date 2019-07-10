@@ -28,7 +28,7 @@ import br.com.tadeudeveloper.pontointeligente.api.v2.enums.PerfilEnum;
 @Table(name = "funcionario")
 public class Funcionario implements Serializable {
 
-	private static final long serialVersionUID = 3739190087732572266L;
+	private static final long serialVersionUID = 7500020585202124448L;
 
 	private Long id;
 	private String nome;
@@ -45,7 +45,6 @@ public class Funcionario implements Serializable {
 	private List<Lancamento> lancamentos;
 
 	public Funcionario() {
-
 	}
 
 	@Id
@@ -74,15 +73,6 @@ public class Funcionario implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}
-
-	@Column(name = "senha", nullable = false)
-	public String getSenha() {
-		return senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
 	}
 
 	@Column(name = "cpf", nullable = false)
@@ -162,6 +152,15 @@ public class Funcionario implements Serializable {
 
 	public void setDataAtualizacao(Date dataAtualizacao) {
 		this.dataAtualizacao = dataAtualizacao;
+	}
+
+	@Column(name = "senha", nullable = false)
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 
 	@ManyToOne(fetch = FetchType.EAGER)
